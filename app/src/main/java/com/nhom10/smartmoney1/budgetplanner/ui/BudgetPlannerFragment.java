@@ -65,7 +65,7 @@ public class BudgetPlannerFragment extends Fragment
                 try {
                     AlertDialog.Builder alertBuilder = new AlertDialog.Builder(getActivity());
 
-                    alertBuilder.setMessage("Bạn có muốn \"Sửa\" or \"Xóa\" kế hoạch này không?")
+                    alertBuilder.setMessage("Bạn có muốn \"Sửa\" hoặc \"Xóa\" kế hoạch này không?")
                             .setTitle(plansList.get(i).getTitle() + " Plan")
                             .setPositiveButton("Sửa", new DialogInterface.OnClickListener() {
                                 @Override
