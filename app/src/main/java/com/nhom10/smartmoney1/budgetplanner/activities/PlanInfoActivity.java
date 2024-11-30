@@ -113,12 +113,12 @@ public class PlanInfoActivity extends AppCompatActivity {
         {
             PlansManager.editPlan(oldPlan.getPlanID() , title, desc, budget, deadline);
             BudgetPlannerFragment.refresh();
-            makeLongToast("Your Plan edited successfully");
+            makeLongToast("Chỉnh sửa kế hoạch thành công");
         }
         else {
             PlansManager.addPlan(title, desc, budget, deadline);
             BudgetPlannerFragment.refresh();
-            makeLongToast("Your Plan added successfully");
+            makeLongToast("Thêm kế hoạch thành công");
         }
         finish();
     }

@@ -53,7 +53,7 @@ public class BudgetAnalysisFragment extends Fragment {
                 Log.i("onCreateView", "onCreateView: " + intValue);
             }
 
-            buildAnalysisChart(anyChartView, "Your Expenses per category this Month", "Budget Categories"
+            buildAnalysisChart(anyChartView, "Chi tiêu tháng này theo danh mục", "Danh mục"
                     , data);
         }
         catch (Exception e)

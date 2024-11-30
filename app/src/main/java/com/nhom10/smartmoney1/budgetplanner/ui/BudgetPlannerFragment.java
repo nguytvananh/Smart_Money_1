@@ -65,9 +65,9 @@ public class BudgetPlannerFragment extends Fragment
                 try {
                     AlertDialog.Builder alertBuilder = new AlertDialog.Builder(getActivity());
 
-                    alertBuilder.setMessage("Do you wont to \"Edit\" or \"Delete\" this plan")
+                    alertBuilder.setMessage("Bạn có muốn \"Sửa\" or \"Xóa\" kế hoạch này không?")
                             .setTitle(plansList.get(i).getTitle() + " Plan")
-                            .setPositiveButton("Edit", new DialogInterface.OnClickListener() {
+                            .setPositiveButton("Sửa", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
                                     // open
@@ -75,7 +75,7 @@ public class BudgetPlannerFragment extends Fragment
                                     editSelectedPlan(context, selectedPlan);
                                 }
                             })
-                            .setNegativeButton("Delete", new DialogInterface.OnClickListener() {
+                            .setNegativeButton("Xóa", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
                                     PlansManager.deletePlan(selectedPlan);
