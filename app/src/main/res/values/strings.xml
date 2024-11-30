@@ -53,7 +53,7 @@
     <string name="your_monthly_expenses_analysis">Cài đặt</string>
     <string name="new_budget_category">New Budget Category</string>
     <string name="plan_info">Plan Info</string>
-    <string name="your_expenses">Your Expenses</string>
+    <string name="your_expenses">Giao dịch</string>
     <string name="new_transaction">Add New Transaction</string>
 
 </resources>
