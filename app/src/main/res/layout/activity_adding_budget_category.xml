@@ -39,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/category"
-        app:startIconDrawable="@drawable/icon_shopaholic"
+        app:startIconDrawable="@drawable/bag_fill"
         app:counterEnabled="true"
         app:counterMaxLength="50"
         app:startIconContentDescription="@string/content_description_end_icon">
@@ -59,7 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/category_price"
-        app:startIconDrawable="@drawable/ic_dollar"
+        app:startIconDrawable="@drawable/u_dollar_alt"
         app:endIconMode="clear_text"
         app:helperTextEnabled="true"
         app:helperText="@string/price_helper"

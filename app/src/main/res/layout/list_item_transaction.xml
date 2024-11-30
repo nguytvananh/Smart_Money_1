@@ -20,7 +20,7 @@
             android:textColor="#000"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Product Name"/>
+            android:text="Tên khoản"/>
 
         <TextView
             android:id="@+id/buy_date"
@@ -29,7 +29,7 @@
             android:textColor="#000"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="buy Date"/>
+            android:text="Ngày"/>
 
 
     </LinearLayout>

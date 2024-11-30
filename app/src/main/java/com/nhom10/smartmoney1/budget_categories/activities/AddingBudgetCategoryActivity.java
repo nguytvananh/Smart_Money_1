@@ -33,6 +33,11 @@ public class AddingBudgetCategoryActivity extends AppCompatActivity
         icons.add(R.drawable.ic_paper_money);
         icons.add(R.drawable.ic_shopaholic);
         icons.add(R.drawable.icon_shopaholic);
+        icons.add(R.drawable.bag_fill);
+        icons.add(R.drawable.chart_square);
+        icons.add(R.drawable.receipt_item);
+        icons.add(R.drawable.setting_2);
+        icons.add(R.drawable.u_dollar_alt);
 
         listView = findViewById(R.id.list_view_id);
         iconsListAdapter = new IconsListAdapter(icons , this);

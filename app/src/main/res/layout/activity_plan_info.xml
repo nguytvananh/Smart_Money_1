@@ -24,7 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/plan_title"
-                app:startIconDrawable="@drawable/icon_shopaholic"
+                app:startIconDrawable="@drawable/receipt_item"
                 app:counterEnabled="true"
                 app:counterMaxLength="50"
                 app:startIconContentDescription="@string/content_description_end_icon">
@@ -45,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/plan_desc"
-                app:startIconDrawable="@drawable/icon_shopaholic"
+                app:startIconDrawable="@drawable/bag_fill"
                 app:counterEnabled="true"
                 app:counterMaxLength="50"
                 app:endIconMode="clear_text"
@@ -68,7 +68,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/needed_budget"
-                app:startIconDrawable="@drawable/ic_dollar"
+                app:startIconDrawable="@drawable/u_dollar_alt"
                 app:endIconMode="clear_text"
                 app:prefixText="$"
                 app:startIconContentDescription="@string/content_description_end_icon">

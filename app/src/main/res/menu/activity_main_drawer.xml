@@ -7,7 +7,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_dollar"
+            android:icon="@drawable/money_change"
             android:title="@string/month_s_expenses" />
 
         <item
@@ -17,22 +17,18 @@
 
         <item
             android:id="@+id/nav_budget_analysis"
-            android:icon="@drawable/ic_pie_chart"
+            android:icon="@drawable/chart_square"
             android:title="@string/budget_analysis" />
 
         <item
-            android:id="@+id/nav_monthly_expenses_analysis"
-            android:icon="@drawable/trending"
-            android:title="@string/your_monthly_expenses_analysis" />
-
-
-        <item
             android:id="@+id/nav_budgetPlanner"
-            android:icon="@drawable/plan"
+            android:icon="@drawable/receipt_item"
             android:title="@string/budget_planner" />
 
-
-
+        <item
+            android:id="@+id/nav_monthly_expenses_analysis"
+            android:icon="@drawable/setting_2"
+            android:title="@string/your_monthly_expenses_analysis" />
     </group>
 
 </menu>
