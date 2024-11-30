@@ -75,7 +75,7 @@ public class BudgetCategoryListAdapter extends BaseAdapter
                 try{
                     Intent intent = new Intent( context , ListingCategoryTransactionsActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    intent.putExtra("danh mục", budgetCategory.getName());
+                    intent.putExtra("category", budgetCategory.getName());
                     context.startActivity(intent);
                 }
                 catch (Exception e)
