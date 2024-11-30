@@ -54,6 +54,6 @@
     <string name="new_budget_category">New Budget Category</string>
     <string name="plan_info">Plan Info</string>
     <string name="your_expenses">Giao dịch</string>
-    <string name="new_transaction">Add New Transaction</string>
+    <string name="new_transaction">Thêm giao dịch mới</string>
 
 </resources>
