@@ -47,7 +47,7 @@ public class BudgetCategoryListAdapter extends BaseAdapter
     public View getView(int i, View view, ViewGroup viewGroup)
     {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService( Context.LAYOUT_INFLATER_SERVICE );
-        view = inflater.inflate(R.layout.list_item_budget_categoty, null);
+        view = inflater.inflate(R.layout.list_item_budget_category, null);
 
         final BudgetCategory budgetCategory = budgetCategories.get(i);
 
