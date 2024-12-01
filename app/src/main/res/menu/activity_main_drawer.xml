@@ -25,10 +25,7 @@
             android:icon="@drawable/receipt_item"
             android:title="@string/budget_planner" />
 
-        <item
-            android:id="@+id/nav_monthly_expenses_analysis"
-            android:icon="@drawable/setting_2"
-            android:title="@string/your_monthly_expenses_analysis" />
+
     </group>
 
 </menu>
