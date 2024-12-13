@@ -25,7 +25,22 @@
             android:icon="@drawable/receipt_item"
             android:title="@string/budget_planner" />
 
-
+        <item
+            android:id="@+id/nav_shared_wallet_management"
+            android:icon="@drawable/categories"
+            android:title="@string/shared_wallet_management">
+            <!-- Submenu for shared wallet -->
+            <menu>
+                <item
+                    android:id="@+id/nav_shared_wallet_transaction"
+                    android:icon="@drawable/categories"
+                    android:title="Giao dịch ví chung" />
+                <item
+                    android:id="@+id/nav_shared_wallet_category"
+                    android:icon="@drawable/categories"
+                    android:title="Danh mục ví chung" />
+            </menu>
+        </item>
     </group>
 
 </menu>

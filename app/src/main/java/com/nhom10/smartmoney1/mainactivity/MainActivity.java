@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             // menu should be considered as top level destinations.
             mAppBarConfiguration = new AppBarConfiguration.Builder(
                     R.id.nav_home, R.id.nav_budgetManager , R.id.nav_budget_analysis ,R.id.nav_budgetPlanner
-                    ,R.id.nav_monthly_expenses_analysis)
+                    ,R.id.nav_monthly_expenses_analysis, R.id.nav_shared_wallet_management, R.id.nav_shared_wallet_transaction, R.id.nav_shared_wallet_category)
                     .setDrawerLayout(drawer)
                     .build();
 
@@ -128,6 +128,8 @@ public class MainActivity extends AppCompatActivity {
 
         userWalletFragment.show(fragmentManager,"add income");
     }
+
+
 
     // TODO // Database contain(plans , transactions , budget categories)
 }

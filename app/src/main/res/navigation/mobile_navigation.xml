@@ -34,7 +34,21 @@
         android:name="com.nhom10.smartmoney1.monthestracker.ui.MonthlyExpensesAnalysisFragment"
         android:label="@string/your_monthly_expenses_analysis"
         tools:layout="@layout/fragment_monthly_expenses_analysis" />
+    <fragment
+        android:id="@+id/nav_shared_wallet_management"
+        android:name="com.nhom10.smartmoney1.sharedWalletManagement.SharedWalletTransaction"
+        android:label="@string/shared_wallet_management"
+        tools:layout="@layout/shared_wallet_transaction" />
+    <fragment
+        android:id="@+id/nav_shared_wallet_transaction"
+        android:name="com.nhom10.smartmoney1.sharedWalletManagement.SharedWalletTransaction"
+        android:label="Giao dịch ví chung"
+        tools:layout="@layout/shared_wallet_transaction" />
 
-
+    <fragment
+        android:id="@+id/nav_shared_wallet_category"
+        android:name="com.nhom10.smartmoney1.sharedWalletManagement.SharedWalletCategory"
+        android:label="Danh mục ví chung"
+        tools:layout="@layout/shared_wallet_category" />
 
 </navigation>

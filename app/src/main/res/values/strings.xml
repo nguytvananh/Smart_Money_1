@@ -55,5 +55,6 @@
     <string name="plan_info">Chi tiết kế hoạch</string>
     <string name="your_expenses">Giao dịch</string>
     <string name="new_transaction">Thêm giao dịch mới</string>
-
+    <string name="shared_wallet_management">Ví chung</string>
+    <string name="member_header">Các thành viên trong gia đình</string>
 </resources>
