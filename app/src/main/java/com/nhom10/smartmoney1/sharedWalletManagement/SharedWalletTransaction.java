@@ -66,7 +66,7 @@
             budgetCategoryListView.setAdapter(budgetCategoryListAdapter);
             budgetCategoryListAdapter.notifyDataSetChanged();
 
-            totalExpensesTextView.setText("$ "+String.valueOf(BudgetCategoryManager.getTotalExpenses()));
+            totalExpensesTextView.setText("$ "+String.valueOf(4750));
 
 
             return root;
@@ -76,7 +76,7 @@
         public void onResume() {
             super.onResume();
             budgetCategoryListAdapter.notifyDataSetChanged();
-            totalExpensesTextView.setText("$ "+String.valueOf(BudgetCategoryManager.getTotalExpenses()));
+            totalExpensesTextView.setText("$ "+String.valueOf(4750));
         }
 
         @Override
@@ -85,7 +85,7 @@
             if(budgetCategoryListAdapter!=null)
             {
                 budgetCategoryListAdapter.notifyDataSetChanged();
-                totalExpensesTextView.setText("$ "+String.valueOf(BudgetCategoryManager.getTotalExpenses()));
+                totalExpensesTextView.setText("$ "+4750);
             }
         }
 
