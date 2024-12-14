@@ -42,9 +42,18 @@
             </menu>
         </item>
         <item
-            android:id="@+id/nav_member_management"
+            android:id="@+id/nav_shared_plan"
             android:icon="@drawable/receipt_item"
+            android:title="Kế hoạch" />
+
+        <item
+            android:id="@+id/nav_member_management"
+            android:icon="@drawable/member"
             android:title="Quản lí thành viên" />
+        <item
+            android:id="@+id/nav_shared_budget_analysis"
+            android:icon="@drawable/chart_square"
+            android:title="@string/budget_analysis" />
     </group>
 
 </menu>

@@ -29,11 +29,7 @@
         android:label="@string/budget_analysis"
         tools:layout="@layout/fragment_budget_planner" />
 
-    <fragment
-        android:id="@+id/nav_monthly_expenses_analysis"
-        android:name="com.nhom10.smartmoney1.monthestracker.ui.MonthlyExpensesAnalysisFragment"
-        android:label="@string/your_monthly_expenses_analysis"
-        tools:layout="@layout/fragment_monthly_expenses_analysis" />
+
     <fragment
         android:id="@+id/nav_shared_wallet_management"
         android:name="com.nhom10.smartmoney1.sharedWalletManagement.SharedWalletTransaction"
@@ -55,5 +51,15 @@
         android:name="com.nhom10.smartmoney1.memberManagement.MemberManagement"
         android:label="Quản lí thành viên"
         tools:layout="@layout/member_management" />
+    <fragment
+        android:id="@+id/nav_shared_plan"
+        android:name="com.nhom10.smartmoney1.sharedWalletManagement.sharedBudgetplanner.ui.SharedBudgetPlannerFragment"
+        android:label="Kế hoạch ví chung"
+        tools:layout="@layout/fragment_budget_planner" />
+    <fragment
+        android:id="@+id/nav_shared_budget_analysis"
+        android:name="com.nhom10.smartmoney1.sharedWalletManagement.sharedBudgetAnalysis.SharedBudgetAnalysisFragment"
+        android:label="Thống kê ví chung"
+        tools:layout="@layout/fragment_budget_planner" />
 
 </navigation>

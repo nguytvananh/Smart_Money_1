@@ -16,6 +16,7 @@ import com.nhom10.smartmoney1.dbmanagment.DatabaseController;
 import com.nhom10.smartmoney1.globalOperations.DateStringFormatter;
 import com.nhom10.smartmoney1.monthestracker.MonthExpenses;
 import com.nhom10.smartmoney1.monthestracker.MonthsTracker;
+import com.nhom10.smartmoney1.sharedWalletManagement.SharedBudgetCategoryManager;
 import com.nhom10.smartmoney1.transactions.TransactionManager;
 import com.nhom10.smartmoney1.transactions.activities.AddingTransactionActivity;
 import com.nhom10.smartmoney1.usermoney.UserWallet;
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
             databaseController = new DatabaseController(this);
             BudgetCategoryManager.LoadCategoryEnvelop();
+            SharedBudgetCategoryManager.LoadCategoryEnvelop();
             MonthsTracker.checkUpdates(this);
             TransactionManager.loadTransactions();
             PlansManager.loadPlans();
@@ -67,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             // menu should be considered as top level destinations.
             mAppBarConfiguration = new AppBarConfiguration.Builder(
                     R.id.nav_home, R.id.nav_budgetManager , R.id.nav_budget_analysis ,R.id.nav_budgetPlanner
-                    ,R.id.nav_monthly_expenses_analysis, R.id.nav_shared_wallet_management, R.id.nav_shared_wallet_transaction, R.id.nav_shared_wallet_category)
+                    , R.id.nav_shared_wallet_management, R.id.nav_shared_wallet_transaction, R.id.nav_shared_wallet_category)
                     .setDrawerLayout(drawer)
                     .build();
 

@@ -41,7 +41,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".sharedWalletManagement.sharedBudgetplanner.activities.SharedPlanInfoActivity"
+            android:label="@string/plan_info"/>
     </application>
 
 </manifest>
