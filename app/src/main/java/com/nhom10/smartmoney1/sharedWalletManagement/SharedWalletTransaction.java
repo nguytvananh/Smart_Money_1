@@ -29,7 +29,7 @@
     public class SharedWalletTransaction extends Fragment {
         TextView totalExpensesTextView;
         ListView budgetCategoryListView;
-        static BudgetCategoryListAdapter budgetCategoryListAdapter;
+        static SharedBudgetCategoryListAdapter budgetCategoryListAdapter;
         ArrayList<BudgetCategory> budgetCategories;
         @Override
         public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -61,7 +61,7 @@
             budgetCategories.add(new BudgetCategory(4, "Utilities", 4000, 1500));
             budgetCategories.add(new BudgetCategory(5, "Health", 2500, 1000));
 
-            budgetCategoryListAdapter = new BudgetCategoryListAdapter(context, budgetCategories);
+            budgetCategoryListAdapter = new SharedBudgetCategoryListAdapter(context, budgetCategories);
 
             budgetCategoryListView.setAdapter(budgetCategoryListAdapter);
             budgetCategoryListAdapter.notifyDataSetChanged();

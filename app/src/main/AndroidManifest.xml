@@ -44,6 +44,9 @@
         <activity
             android:name=".sharedWalletManagement.sharedBudgetplanner.activities.SharedPlanInfoActivity"
             android:label="@string/plan_info"/>
+        <activity
+            android:name=".sharedWalletManagement.SharedListingCategoryTransaction"
+            android:label="@string/your_expenses" />
     </application>
 
 </manifest>
