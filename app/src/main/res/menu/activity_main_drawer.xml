@@ -33,7 +33,7 @@
             <menu>
                 <item
                     android:id="@+id/nav_shared_wallet_transaction"
-                    android:icon="@drawable/categories"
+                    android:icon="@drawable/money_change"
                     android:title="Giao dịch ví chung" />
                 <item
                     android:id="@+id/nav_shared_wallet_category"
@@ -41,6 +41,10 @@
                     android:title="Danh mục ví chung" />
             </menu>
         </item>
+        <item
+            android:id="@+id/nav_member_management"
+            android:icon="@drawable/receipt_item"
+            android:title="Quản lí thành viên" />
     </group>
 
 </menu>

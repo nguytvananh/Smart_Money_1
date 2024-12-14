@@ -19,7 +19,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.nhom10.smartmoney1.R;
 import com.nhom10.smartmoney1.budget_categories.BudgetCategory;
 import com.nhom10.smartmoney1.budget_categories.BudgetCategoryManager;
-import com.nhom10.smartmoney1.budget_categories.ui.BudgetCategoryInfoFragment;
+import com.nhom10.smartmoney1.sharedWalletManagement.SharedBudgetInfoFragement;
 import com.nhom10.smartmoney1.mainactivity.fragments.budgetmanager.BudgetManagerListAdapter;
 
 import java.util.ArrayList;
@@ -85,7 +85,7 @@ public class SharedWalletCategory extends Fragment {
     {
         FragmentManager fragmentManager = fragmentActivity.getSupportFragmentManager();
 
-        BudgetCategoryInfoFragment budgetCategoryInfoFragment = new BudgetCategoryInfoFragment();
+        SharedBudgetInfoFragement budgetCategoryInfoFragment = new SharedBudgetInfoFragement();
 
         budgetCategoryInfoFragment.show(fragmentManager,"New budget");
     }
@@ -93,9 +93,9 @@ public class SharedWalletCategory extends Fragment {
     {
         FragmentManager fragmentManager = fragmentActivity.getSupportFragmentManager();
 
-        BudgetCategoryInfoFragment budgetCategoryInfoFragment = new BudgetCategoryInfoFragment(budgetCategory);
+        SharedBudgetInfoFragement SharedBudgetInfoFragement = new SharedBudgetInfoFragement(budgetCategory);
 
-        budgetCategoryInfoFragment.show(fragmentManager,"New budget");
+        SharedBudgetInfoFragement.show(fragmentManager,"New budget");
     }
 }
 

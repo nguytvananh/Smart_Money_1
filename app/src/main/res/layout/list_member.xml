@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/member_list_view">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="#FFF">
+
+        <TextView
+            android:id="@+id/member_name"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:textColor="#000"
+            android:textSize="16.0dp"
+            android:layout_height="wrap_content"
+            android:text="Member Name"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/member_role"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:textColor="#000"
+            android:textSize="16.0dp"
+            android:layout_height="wrap_content"
+            android:text="Member Role"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
