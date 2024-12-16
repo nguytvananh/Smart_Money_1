@@ -17,38 +17,37 @@
 
         <TextView
             android:id="@+id/member_name"
-            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:text="Member Name"
             android:textColor="#000"
-            android:textSize="16.0dp"
-            android:layout_height="wrap_content"
-            android:text="Member Name"/>
+            android:textSize="16.0dp" />
 
 
     </LinearLayout>
 
     <LinearLayout
-
-        android:layout_gravity="center"
-        android:orientation="vertical"
+        android:padding="10dp"
         android:layout_weight="1"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:background="#fff">
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="#FFF">
 
         <TextView
+
             android:id="@+id/member_role"
-            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:text="Member Role"
             android:textColor="#000"
-            android:textSize="16.0dp"
-            android:layout_height="wrap_content"
-            android:text="Member Role"/>
-
+            android:textSize="16.0dp" />
 
 
     </LinearLayout>

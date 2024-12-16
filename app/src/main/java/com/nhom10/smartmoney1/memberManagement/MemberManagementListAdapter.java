@@ -58,7 +58,7 @@ public class MemberManagementListAdapter extends BaseAdapter
 
 
         memberName.setText(memberList.getName());
-        memberRole.setText("$"+String.valueOf(memberList.getRole()));
+        memberRole.setText(String.valueOf(memberList.getRole()));
 
 
 

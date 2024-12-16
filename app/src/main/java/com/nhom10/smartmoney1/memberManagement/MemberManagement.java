@@ -42,10 +42,10 @@ public class MemberManagement extends Fragment {
             memberLists = new ArrayList<>();
 
             // Thêm các danh mục mẫu vào danh sách
-            memberLists.add(new MemberList(1, "Nguyễn Văn A", "Chủ ví"));
-            memberLists.add(new MemberList(2, "Nguyễn Văn B", "Người chi tiêu"));
-            memberLists.add(new MemberList(3, "Nguyễn Văn C", "Thành viên"));
-            memberLists.add(new MemberList(4, "Nguyễn Văn D", "Thành viên"));
+            memberLists.add(new MemberList(1, "Nguyễn Thị Mẹ", "Chủ ví"));
+            memberLists.add(new MemberList(2, "Nguyễn Văn Bố", "Khác"));
+            memberLists.add(new MemberList(3, "Nguyễn Văn Con", "Khác"));
+            memberLists.add(new MemberList(4, "Nguyễn Thị Bà", "Khác"));
 
 
             memberManagementListAdapter = new MemberManagementListAdapter(context, memberLists);

@@ -29,7 +29,7 @@
     public class SharedWalletTransaction extends Fragment {
         TextView totalExpensesTextView;
         ListView budgetCategoryListView;
-        static BudgetCategoryListAdapter budgetCategoryListAdapter;
+        static SharedBudgetCategoryListAdapter budgetCategoryListAdapter;
         ArrayList<BudgetCategory> budgetCategories;
         @Override
         public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -56,12 +56,12 @@
 
             // Thêm các danh mục mẫu vào danh sách
             budgetCategories.add(new BudgetCategory(1, "Food", 5000, 1000));
-            budgetCategories.add(new BudgetCategory(2, "Transport", 3000, 500));
-            budgetCategories.add(new BudgetCategory(3, "Entertainment", 2000, 750));
-            budgetCategories.add(new BudgetCategory(4, "Utilities", 4000, 1500));
+            budgetCategories.add(new BudgetCategory(2, "Transport", 3000, 1000));
+            budgetCategories.add(new BudgetCategory(3, "Entertainment", 2000, 1000));
+            budgetCategories.add(new BudgetCategory(4, "Utilities", 4000, 1000));
             budgetCategories.add(new BudgetCategory(5, "Health", 2500, 1000));
 
-            budgetCategoryListAdapter = new BudgetCategoryListAdapter(context, budgetCategories);
+            budgetCategoryListAdapter = new SharedBudgetCategoryListAdapter(context, budgetCategories);
 
             budgetCategoryListView.setAdapter(budgetCategoryListAdapter);
             budgetCategoryListAdapter.notifyDataSetChanged();
