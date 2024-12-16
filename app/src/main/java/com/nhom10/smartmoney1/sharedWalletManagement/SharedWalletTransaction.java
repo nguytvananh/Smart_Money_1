@@ -29,7 +29,7 @@
     public class SharedWalletTransaction extends Fragment {
         TextView totalExpensesTextView;
         ListView budgetCategoryListView;
-        static BudgetCategoryListAdapter budgetCategoryListAdapter;
+        static SharedBudgetCategoryListAdapter budgetCategoryListAdapter;
         ArrayList<BudgetCategory> budgetCategories;
         @Override
         public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -39,29 +39,17 @@
 
             totalExpensesTextView = root.findViewById(R.id.total_expenses);
             budgetCategoryListView = root.findViewById(R.id.budget_category_lv);
-            FloatingActionButton fab = root.findViewById(R.id.fab);
-            fab.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-
-                    //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    //      .setAction("Action", null).show();
-
-                    Intent intent = new Intent(context, AddingTransactionSharedWallet.class);
-                    startActivity(intent);
-                }
-            });
 
             budgetCategories = new ArrayList<>();
 
             // Thêm các danh mục mẫu vào danh sách
             budgetCategories.add(new BudgetCategory(1, "Food", 5000, 1000));
-            budgetCategories.add(new BudgetCategory(2, "Transport", 3000, 500));
-            budgetCategories.add(new BudgetCategory(3, "Entertainment", 2000, 750));
-            budgetCategories.add(new BudgetCategory(4, "Utilities", 4000, 1500));
+            budgetCategories.add(new BudgetCategory(2, "Transport", 3000, 1000));
+            budgetCategories.add(new BudgetCategory(3, "Entertainment", 2000, 1000));
+            budgetCategories.add(new BudgetCategory(4, "Utilities", 4000, 1000));
             budgetCategories.add(new BudgetCategory(5, "Health", 2500, 1000));
 
-            budgetCategoryListAdapter = new BudgetCategoryListAdapter(context, budgetCategories);
+            budgetCategoryListAdapter = new SharedBudgetCategoryListAdapter(context, budgetCategories);
 
             budgetCategoryListView.setAdapter(budgetCategoryListAdapter);
             budgetCategoryListAdapter.notifyDataSetChanged();

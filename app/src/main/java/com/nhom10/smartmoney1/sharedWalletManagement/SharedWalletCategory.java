@@ -66,14 +66,6 @@ public class SharedWalletCategory extends Fragment {
                 }
             });
 
-            FloatingActionButton fab = root.findViewById(R.id.fab);
-            fab.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-
-                    addNewBudgetCategory();
-                }
-            });
 
         } catch (Exception e) {
             e.printStackTrace();
